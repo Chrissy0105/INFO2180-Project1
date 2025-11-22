@@ -94,7 +94,20 @@ header nav ul a:hover {
     width: 320px;
     height: auto;
     border-radius: 10px;
+     transition: 
+        transform 0.4s ease,
+        box-shadow 0.3s ease,
+        filter 0.4s ease;
+    filter: blur(3px);
+
 }
+
+
+.overview-hero-image img:hover{
+    transform: scale(1,2);
+    filter: blur(0);
+}
+
 
 
 
@@ -114,6 +127,7 @@ header nav ul a:hover {
     padding: 20px;
     border: 1px solid #E2E8F0;
     text-align: center;
+    gap: 20px;
 }
 
 
@@ -159,6 +173,7 @@ header nav ul a:hover {
 .testing .container {
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
     align-items: center;
     padding: 40px 0;
     gap: 30px;
